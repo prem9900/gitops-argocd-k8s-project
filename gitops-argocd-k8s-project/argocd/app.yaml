@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/yourusername/gitops-argocd-k8s-project  # Change to your repo
+    repoURL: https://github.com/prem9900/gitops-argocd-k8s-project.git  # Change to your repo
     targetRevision: HEAD
     path: apps/myapp/base
   destination:
