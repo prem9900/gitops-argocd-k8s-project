@@ -1,0 +1,7 @@
+# Kustomize config to include both Deployment and Service
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - deployment.yaml
+  - service.yaml
+# You can later add patches here for overlays (dev/staging/prod)

@@ -1,0 +1,22 @@
+# Base Deployment manifest for "myapp"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+  labels:
+    app: myapp
+spec:
+  replicas: 1  # Start with one replica
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: nginx:1.25.1  # Initial image version
+        ports:
+        - containerPort: 80  # Expose HTTP port

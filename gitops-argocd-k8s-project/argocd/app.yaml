@@ -1,0 +1,21 @@
+# Argo CD Application definition for "myapp"
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myapp            # Name shown in ArgoCD UI
+  namespace: argocd      # ArgoCD must be installed in this namespace
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/yourusername/gitops-argocd-k8s-project  # Change to your repo
+    targetRevision: HEAD
+    path: apps/myapp/base
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true      # Remove old resources not in Git
+      selfHeal: true   # Fix drift automatically
+    syncOptions:
+    - CreateNamespace=true  # ArgoCD creates target ns if missing
