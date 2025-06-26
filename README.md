@@ -1,6 +1,4 @@
-Perfect! Here's your **fully corrected `README.md`** with **updated and clean image paths** based on the simplified screenshot filenames (no `.png.png`, no spaces or special characters):
 
----
 
 ## GitOps with ArgoCD & Kubernetes
 
@@ -47,8 +45,8 @@ gitops-argocd-k8s-project/
 │   ├── auto-sync-after-git-commit.png
 │   ├── final-argocd-healthy-synced.png
 │   ├── repo-connection.png
-│   ├── sync-detail.png
-│   └── updated-pod.png
+│   ├── sync-detail.png.png
+│   └── updated-pod.png.png
 └── README.md
 ```
 
@@ -146,14 +144,14 @@ ArgoCD is connected to the correct GitHub repository.
 #### 5. Sync Detail View
 
 Detailed status inside the app view showing **Synced** and **Healthy**.
-![Sync Detail](screenshots/sync-detail.png)
+![Sync Detail](screenshots/sync-detail.png.png)
 
 ---
 
 #### 6. Updated Pods after Git Commit
 
 Pods were updated after changing the image tag and pushing to Git.
-![Updated Pod](screenshots/updated-pod.png)
+![Updated Pod](screenshots/updated-pod.png.png)
 
 ---
 
@@ -168,9 +166,10 @@ Pods were updated after changing the image tag and pushing to Git.
 
 ### 🧠 Final Thoughts
 
-This project helped me understand how GitOps works in real-time using ArgoCD. It’s a powerful and clean way to manage Kubernetes applications — and everything is driven by Git commits.
+This project helped me understand how GitOps works in real-time using ArgoCD.
+It’s a powerful and clean way to manage Kubernetes applications — and everything is driven by Git commits.
 No manual deployments, no missed updates — just clean, automated sync.
 
 ---
 
-Let me know if you’d like this as a downloadable `.md` file or help renaming the files quickly.
+Let me know if you'd like help uploading this to GitHub or need a `.md` file version for direct download.
