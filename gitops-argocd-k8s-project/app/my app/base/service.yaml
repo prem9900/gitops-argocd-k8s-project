@@ -1,0 +1,12 @@
+# Service to expose the myapp Deployment
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-service
+spec:
+  type: NodePort  # Makes it reachable from outside Minikube/K3s
+  selector:
+    app: myapp
+  ports:
+  - port: 80         # Service port
+    targetPort: 80   # Container port
