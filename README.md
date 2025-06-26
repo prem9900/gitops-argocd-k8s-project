@@ -113,37 +113,37 @@ ArgoCD will now connect to the Git repo and deploy the app automatically.
 
  1. ArgoCD Dashboard
 
-Shows the main ArgoCD UI with my application listed. <img src="gitops-argocd-k8s-project/screenshots/app-dashboard.png" width="500"/>
+Shows the main ArgoCD UI with my application listed. <img src="gitops-argocd-k8s-project/screenshots/app-dashboard.png" width="350"/>
 
 ---
 
  2. Auto-Sync Triggered After Git Push
 
-ArgoCD automatically synced after a commit was pushed to Git. <img src="gitops-argocd-k8s-project/screenshots/auto-sync-after-git-commit.png" width="500"/>
+ArgoCD automatically synced after a commit was pushed to Git. <img src="gitops-argocd-k8s-project/screenshots/auto-sync-after-git-commit.png" width="350"/>
 
 ---
 
  3. Final Status - Healthy and Synced
 
-Everything is successfully deployed and running fine. <img src="gitops-argocd-k8s-project/screenshots/final-argocd-healthy-synced.png" width="500"/>
+Everything is successfully deployed and running fine. <img src="gitops-argocd-k8s-project/screenshots/final-argocd-healthy-synced.png" width="350"/>
 
 ---
 
  4. Git Repository Connected
 
-ArgoCD is connected to the correct GitHub repository. <img src="gitops-argocd-k8s-project/screenshots/repo-connection.png" width="500"/>
+ArgoCD is connected to the correct GitHub repository. <img src="gitops-argocd-k8s-project/screenshots/repo-connection.png" width="350"/>
 
 ---
 
  5. Sync Detail View
 
-Detailed status inside the app view showing **Synced** and **Healthy**. <img src="gitops-argocd-k8s-project/screenshots/sync-detail.png" width="500"/>
+Detailed status inside the app view showing **Synced** and **Healthy**. <img src="gitops-argocd-k8s-project/screenshots/sync-detail.png" width="350"/>
 
 ---
 
  6. Updated Pods after Git Commit
 
-Pods were updated after changing the image tag and pushing to Git. <img src="gitops-argocd-k8s-project/screenshots/updated-pod.png" width="500"/>
+Pods were updated after changing the image tag and pushing to Git. <img src="gitops-argocd-k8s-project/screenshots/updated-pod.png" width="350"/>
 
 ---
 
