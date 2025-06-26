@@ -144,14 +144,14 @@ ArgoCD is connected to the correct GitHub repository.
 #### 5. Sync Detail View
 
 Detailed status inside the app view showing **Synced** and **Healthy**.
-![Sync Detail](screenshots/sync-detail.png.png)
+![Sync Detail](screenshots/sync-detail.png)
 
 ---
 
 #### 6. Updated Pods after Git Commit
 
 Pods were updated after changing the image tag and pushing to Git.
-![Updated Pod](screenshots/updated-pod.png.png)
+![Updated Pod](screenshots/updated-pod.png)
 
 ---
 
