@@ -1,4 +1,6 @@
+Absolutely! Here's your **final corrected `README.md`** with the **proper nested image paths** so everything displays correctly on GitHub:
 
+---
 
 ## GitOps with ArgoCD & Kubernetes
 
@@ -116,42 +118,42 @@ ArgoCD will now connect to the Git repo and deploy the app automatically.
 #### 1. ArgoCD Dashboard
 
 Shows the main ArgoCD UI with my application listed.
-![App Dashboard](screenshots/app-dashboard.png)
+![App Dashboard](gitops-argocd-k8s-project/screenshots/app-dashboard.png)
 
 ---
 
 #### 2. Auto-Sync Triggered After Git Push
 
 ArgoCD automatically synced after a commit was pushed to Git.
-![Auto Sync](screenshots/auto-sync-after-git-commit.png)
+![Auto Sync](gitops-argocd-k8s-project/screenshots/auto-sync-after-git-commit.png)
 
 ---
 
 #### 3. Final Status - Healthy and Synced
 
 Everything is successfully deployed and running fine.
-![Final Status](screenshots/final-argocd-healthy-synced.png)
+![Final Status](gitops-argocd-k8s-project/screenshots/final-argocd-healthy-synced.png)
 
 ---
 
 #### 4. Git Repository Connected
 
 ArgoCD is connected to the correct GitHub repository.
-![Repo Connection](screenshots/repo-connection.png)
+![Repo Connection](gitops-argocd-k8s-project/screenshots/repo-connection.png)
 
 ---
 
 #### 5. Sync Detail View
 
 Detailed status inside the app view showing **Synced** and **Healthy**.
-![Sync Detail](screenshots/sync-detail.png)
+![Sync Detail](gitops-argocd-k8s-project/screenshots/sync-detail.png.png)
 
 ---
 
 #### 6. Updated Pods after Git Commit
 
 Pods were updated after changing the image tag and pushing to Git.
-![Updated Pod](screenshots/updated-pod.png)
+![Updated Pod](gitops-argocd-k8s-project/screenshots/updated-pod.png.png)
 
 ---
 
@@ -172,4 +174,6 @@ No manual deployments, no missed updates — just clean, automated sync.
 
 ---
 
-Let me know if you'd like help uploading this to GitHub or need a `.md` file version for direct download.
+✅ **You’re all set now!** Push this `README.md` to your GitHub repo and the screenshots will display correctly.
+
+Let me know if you'd like a downloadable `.md` file or help writing a `GitOps resume bullet point` for this project.
