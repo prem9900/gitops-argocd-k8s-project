@@ -1,37 +1,32 @@
-Thanks for sharing the full code, Prem! 😊
-Here’s your updated **`README.md`** with **all screenshots resized** using HTML `<img>` tags (width set to `700px` for readability and consistency):
-
----
-
-## GitOps with ArgoCD & Kubernetes
+GitOps with ArgoCD & Kubernetes
 
 This is a hands-on project where I implemented GitOps using ArgoCD on a local Kubernetes cluster (Minikube). The goal was to automatically sync and deploy a sample application whenever changes are pushed to a Git repository.
 
 ---
 
-### 🚀 Project Overview
+Project Overview
 
 In this project, I’ve:
 
-* Set up a local Kubernetes cluster using Minikube
-* Installed ArgoCD to manage the cluster
-* Created Kustomize manifests for a sample NGINX application
-* Configured ArgoCD to sync changes from a Git repo automatically
-* Verified the full GitOps workflow with screenshots
+Set up a local Kubernetes cluster using Minikube
+  Installed ArgoCD to manage the cluster
+  Created Kustomize manifests for a sample NGINX application
+  Configured ArgoCD to sync changes from a Git repo automatically
+ Verified the full GitOps workflow with screenshots
 
 ---
 
-### 🧰 Tech Stack
+ Tech Stack
 
-* Kubernetes (Minikube)
-* ArgoCD
-* Git
-* Kustomize
-* kubectl
+ Kubernetes (Minikube)
+ArgoCD
+Git
+Kustomize
+kubectl
 
 ---
 
-### 📁 Project Structure
+ Project Structure
 
 ```
 gitops-argocd-k8s-project/
@@ -55,24 +50,24 @@ gitops-argocd-k8s-project/
 
 ---
 
-### 📦 What's Included
+ What's Included
 
-* A working example of GitOps flow using ArgoCD
-* YAML files for app deployment and service
-* ArgoCD `Application` manifest for auto-syncing
-* Screenshot evidence of the setup working properly
+A working example of GitOps flow using ArgoCD
+YAML files for app deployment and service
+ArgoCD `Application` manifest for auto-syncing
+ Screenshot evidence of the setup working properly
 
 ---
 
-### 🛠️ How to Set It Up (Step-by-Step)
+ How to Set It Up (Step-by-Step)
 
-#### 1. Start Minikube
+ Start Minikube
 
 ```bash
 minikube start
 ```
 
-#### 2. Install ArgoCD
+ 2. Install ArgoCD
 
 ```bash
 kubectl create namespace argocd
@@ -81,7 +76,7 @@ kubectl apply -n argocd \
   -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 
-#### 3. Access the ArgoCD UI
+ 3. Access the ArgoCD UI
 
 ```bash
 kubectl -n argocd port-forward svc/argocd-server 8080:443
@@ -95,7 +90,7 @@ Default credentials:
 kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d
 ```
 
-#### 4. Deploy the Application
+ 4. Deploy the Application
 
 ```bash
 kubectl apply -n argocd -f argocd/app.yaml
@@ -105,7 +100,7 @@ ArgoCD will now connect to the Git repo and deploy the app automatically.
 
 ---
 
-### 🔁 How the GitOps Flow Works
+ How the GitOps Flow Works
 
 1. You make a change to your Kubernetes YAML files in Git (like updating the image tag).
 2. You commit and push the changes to your GitHub repo.
@@ -114,62 +109,56 @@ ArgoCD will now connect to the Git repo and deploy the app automatically.
 
 ---
 
-### 📸 Screenshots of GitOps in Action
+ Screenshots of GitOps in Action
 
-#### 1. ArgoCD Dashboard
+ 1. ArgoCD Dashboard
 
-Shows the main ArgoCD UI with my application listed. <img src="gitops-argocd-k8s-project/screenshots/app-dashboard.png" width="700"/>
-
----
-
-#### 2. Auto-Sync Triggered After Git Push
-
-ArgoCD automatically synced after a commit was pushed to Git. <img src="gitops-argocd-k8s-project/screenshots/auto-sync-after-git-commit.png" width="700"/>
+Shows the main ArgoCD UI with my application listed. <img src="gitops-argocd-k8s-project/screenshots/app-dashboard.png" width="500"/>
 
 ---
 
-#### 3. Final Status - Healthy and Synced
+ 2. Auto-Sync Triggered After Git Push
 
-Everything is successfully deployed and running fine. <img src="gitops-argocd-k8s-project/screenshots/final-argocd-healthy-synced.png" width="700"/>
-
----
-
-#### 4. Git Repository Connected
-
-ArgoCD is connected to the correct GitHub repository. <img src="gitops-argocd-k8s-project/screenshots/repo-connection.png" width="700"/>
+ArgoCD automatically synced after a commit was pushed to Git. <img src="gitops-argocd-k8s-project/screenshots/auto-sync-after-git-commit.png" width="500"/>
 
 ---
 
-#### 5. Sync Detail View
+ 3. Final Status - Healthy and Synced
 
-Detailed status inside the app view showing **Synced** and **Healthy**. <img src="gitops-argocd-k8s-project/screenshots/sync-detail.png" width="700"/>
-
----
-
-#### 6. Updated Pods after Git Commit
-
-Pods were updated after changing the image tag and pushing to Git. <img src="gitops-argocd-k8s-project/screenshots/updated-pod.png" width="700"/>
+Everything is successfully deployed and running fine. <img src="gitops-argocd-k8s-project/screenshots/final-argocd-healthy-synced.png" width="500"/>
 
 ---
 
-### 🎯 Why This Matters
+ 4. Git Repository Connected
 
-* **Automation:** No need to manually apply manifests after Git push.
-* **Reliability:** ArgoCD ensures the cluster always matches the latest config.
-* **Visibility:** ArgoCD UI gives full insight into what’s deployed and what changed.
-* **Real-time Deployment:** Everything updates automatically just by pushing to Git.
+ArgoCD is connected to the correct GitHub repository. <img src="gitops-argocd-k8s-project/screenshots/repo-connection.png" width="500"/>
 
 ---
 
-### 🧠 Final Thoughts
+ 5. Sync Detail View
+
+Detailed status inside the app view showing **Synced** and **Healthy**. <img src="gitops-argocd-k8s-project/screenshots/sync-detail.png" width="500"/>
+
+---
+
+ 6. Updated Pods after Git Commit
+
+Pods were updated after changing the image tag and pushing to Git. <img src="gitops-argocd-k8s-project/screenshots/updated-pod.png" width="500"/>
+
+---
+
+Why This Matters
+
+  Automation: No need to manually apply manifests after Git push.
+  Reliability: ArgoCD ensures the cluster always matches the latest config.
+  Visibility: ArgoCD UI gives full insight into what’s deployed and what changed.
+  Real-time Deployment: Everything updates automatically just by pushing to Git.
+
+
+ Final Thoughts
 
 This project helped me understand how GitOps works in real-time using ArgoCD.
 It’s a powerful and clean way to manage Kubernetes applications — and everything is driven by Git commits.
 No manual deployments, no missed updates — just clean, automated sync.
 
----
 
-✅ **You're all set now!**
-Copy and paste this into your `README.md`, commit the changes, and your screenshots will look neat and clean!
-
-Would you like this in a downloadable `.md` file too?
