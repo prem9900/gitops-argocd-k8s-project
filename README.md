@@ -131,7 +131,7 @@ Everything is successfully deployed and running fine. <img src="gitops-argocd-k8
 
  4. Git Repository Connected
 
-ArgoCD is connected to the correct GitHub repository. <img src="gitops-argocd-k8s-project/screenshots/repo-connection.png" width="350"/>
+ArgoCD is connected to the correct GitHub repository. <img src="gitops-argocd-k8s-project/screenshots/repo-connection.png.png." width="350"/>
 
 ---
 
